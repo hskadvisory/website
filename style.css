@@ -5,11 +5,13 @@
 }
 
 .navbar-brand {
-    width: 80px;
+    width: 90px;
+    cursor: pointer;
+
 }
 
+/* 
 .navbar {
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     font-family: Verdana, sans-serif;
 }
@@ -23,18 +25,193 @@
     float: left;
     color: #2a2a2a;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 18px;
     text-decoration: none;
-    font-size: 17px;
-  }
+    font-size: 19px;
+}
 
-  .navbar a:hover {
-    color: #0d4b64;
-  }
-  
+.navbar a:hover {
+    color: #4f9cba;
+}
+
 .footer {
     min-height: 100px;
     text-align: center;
     font-family: Verdana, sans-serif;
     font-size: small;
 }
+
+.active{
+    border-bottom: 5px solid #0d4b64;
+}
+
+.carousel-caption {
+    position: absolute;
+     right: 0%; 
+    bottom: 20px;
+    left: 0%; 
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left; 
+}
+
+
+.nav-link{
+    color: #0d4b64;
+    /* text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 30px 35px;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+
+
+}*/
+
+.carousel-container .btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 25px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+
+body,
+html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+}
+
+ul {
+    /* margin: 150px auto 0;  */
+    padding: 0;
+    list-style: none;
+    display: table;
+    /* width: 600px; */
+    text-align: center;
+}
+
+
+li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+a {
+    color: rgb(30, 24, 24);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(3, 3, 3);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+
+
+.btn {
+    border-radius: 1px;
+    padding: 25px 58px;
+    font: 18px  'Open Sans', arial, sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    background: #0d4b64;
+    background-size: 300%;
+    display: inline-block;
+    color: #0d4b64;
+    border-radius: 5px;
+    border: 1px solid #0d4b64;
+    position: relative;
+    cursor: pointer;
+    animation: glowing 8s linear infinite;
+    text-transform: uppercase;
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.2); */
+    letter-spacing: 2px;
+    opacity: 1;
+}
+
+.btn:after {
+    content: " ";
+    position: absolute;
+    border-radius: inherit;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    top: -6px;
+    background: inherit;
+    background-size: inherit;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    filter: blur(16px);
+    animation: glowing 7s linear infinite;
+    transform: translateZ(0);
+}
+
+.btn:hover {
+
+    background:
+        linear-gradient(80deg,
+            #3ba3cd,
+            #0d4b64,
+            #072936,
+            #16a7e0
+            );
+    background-size: 300%;
+    border: none;
+    color: #fff;
+
+      /*animation: glowing 8s linear infinite;*/
+  
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);}
+  
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font: bold 100px  'Open Sans', arial, sans-serif;
+    /* text-shadow: 2px 2px  #2b2525; */
+    text-shadow: 0 0 150px rgb(102, 100, 100);
+    color: #fff;
+  }
+
+
